@@ -1,0 +1,76 @@
+@import '../../assets/scss/variables.scss';
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $DarkPurple;
+    height: 100vh;
+    width: 104px;
+    padding: 24px 0;
+    border: 1px solid #393C49;
+}
+
+.nav__list {
+    display: flex;
+    height: 90%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 15px;
+   margin-top: 24px;
+   .active{
+    background-color: $DarkGrey;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    position: relative;
+    a{
+    background-color: $DarkOrange;
+    color: #fff;
+    border: 1px solid $DarkOrange;
+    box-shadow: 0px 8px 24px 0px rgba(234, 124, 105, 0.32);
+    }
+    &::before{
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-image: url('../../assets/icon/burchak.svg');
+        position: absolute;
+        top: 0;
+        right: 0;
+        top: -12px;
+    }
+    &::after{
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-image: url('../../assets/icon/burchak.svg');
+        position: absolute;
+        bottom:  -12px;
+        right: 0.2px;
+        transform: rotate(-90deg);
+    }
+}
+}
+
+.nav__item {
+    padding: 12px;
+   margin-left: -9px;
+
+}
+
+.nav__Link {
+    padding: 16px;
+    display: flex;
+    border-radius: 8px;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    color: $DarkOrange;
+    font-size: 22px;
+    font-weight: bold;
+
+}

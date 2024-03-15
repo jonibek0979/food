@@ -1,0 +1,31 @@
+.not {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.not__inner {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 350px;
+
+        &:nth-child(1) {
+            color: rgb(23, 0, 128);
+        }
+
+        &:nth-child(2) {
+            color: rgb(65, 225, 86);
+        }
+
+        &:nth-child(3) {
+            color: rgb(43, 255, 0);
+        }
+    }
+}

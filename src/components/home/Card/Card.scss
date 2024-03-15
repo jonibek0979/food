@@ -1,0 +1,45 @@
+@import '../../../assets/scss/variables.scss';
+
+.card {
+    width: 192px;
+    height: 226px;
+    border-radius: 18px;
+    background: $DarkPurple;
+    padding-left: 21px;
+    padding-right: 21px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    img {
+        display: block;
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+        margin-top: -35px;
+        background: rgba(88, 88, 88, 0.938);
+    }
+
+    .text__div {
+        color: rgba(240, 248, 255, 0.781);
+        text-align: center;
+
+        h3 {
+        margin-top: 18px;
+        font-size: 14px;
+        }
+
+        b {
+            font-size: 14px;
+        }
+
+        p {
+            font-weight: 200;
+            font-size: 20px;
+            color: rgba(127, 255, 212, 0.521);
+     
+        }
+    }
+}

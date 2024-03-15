@@ -1,0 +1,112 @@
+@import '../../../assets/scss/variables.scss';
+
+
+// .Top{
+// }
+.Top__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding-bottom: 10px;
+
+    div:nth-child(1) {
+        h2 {
+            font-size: 28px;
+            color: white;
+        }
+
+        h6 {
+            color: white;
+            color: white;
+            font-size: 16px;
+            margin-top: 4px;
+        }
+    }
+
+    div:nth-child(2) {
+        width: 250px;
+        height: 52px;
+        // padding: 14px;
+        border-radius: 8px;
+        border: 1px solid #5d5e5f;
+        background: #2D303E;
+        padding-left: 14px;
+        padding-top: 14px;
+
+        button {
+            border: none;
+            background: fixed;
+            width: 30px;
+            cursor: pointer;
+            color: black;
+
+            i:hover {
+                color: #fff;
+            }
+        }
+
+        input {
+            outline: none;
+            border: none;
+            background: fixed;
+            text-align: start;
+            margin-left: 8px;
+            color: aliceblue;
+        }
+    }
+}
+
+.Top__nav {
+    padding-top: 24px;
+
+    .Top__list {
+        display: block;
+        width: 88%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid grey;
+
+        .active {
+            button {
+                color: $DarkOrange;
+            }
+
+            border-bottom: 3px solid $DarkOrange;
+
+        }
+    }
+
+    .Top__item {
+        margin-left: -30px;
+        padding: 13px 0;
+
+        .Top__btn {
+            border: none;
+            background: fixed;
+            color: white;
+            font-size: 18px;
+        }
+
+        border-bottom: 3px solid transparent;
+
+
+    }
+}
+
+.cart__LIST {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 600px;
+    overflow: auto;
+
+    li {
+        margin-left: 28px;
+        margin-top: 68px;
+        cursor: pointer;
+
+    }
+}

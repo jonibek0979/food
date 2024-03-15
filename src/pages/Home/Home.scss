@@ -1,0 +1,13 @@
+@import '../../assets/scss/variables.scss';
+
+.Home{
+   display: flex;
+   justify-content: space-between;
+   background: $DarkGrey;
+   flex-grow: 1;
+   padding-left: 24px;
+}
+.home__main{
+   width: 68%;
+   padding-right: 24px;
+}
